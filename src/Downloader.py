@@ -54,13 +54,13 @@ except json.decoder.JSONDecodeError as e:
 
 while len(docs_json) is not 0:
     for i in range(len(docs_json)):
-        print("Downloading: " + docs_json[i]['name'])
+        #print("Downloading: " + docs_json[i]['name'])
         # actually download file
         with open(download_location + docs_json[i]['name'], 'wb') as handle:
             response = requests.get(locationurl(space, docs_json[i]['id']), stream=True, headers=headers)
             if not response.ok:
                 # Something went wrong
-                print("Cannot download file")
+                print("Cannot download file: " + docs_json[i]['name'])
             for block in response.iter_content(1024):
                 handle.write(block)
 
