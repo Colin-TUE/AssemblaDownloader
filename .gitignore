@@ -1,2 +1,4 @@
 .idea/
-.ipynb
+*.ipynb
+config.py
+__pycache__/
