@@ -1,5 +1,5 @@
 # AssemblaDownloader
-Python Script for Downloading all documents from an Assembla project
+Python Script for Downloading all documents from [Assembla](https://www.assembla.com/)
 
 It is meant for the command line and does not have a GUI, but supports slection of one of your spaces.
 
